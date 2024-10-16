@@ -26,4 +26,3 @@ installed_packages_matrix <- installed.packages()
 # Convert the matrix to a data frame
 installed_packages_df <- as.data.frame(installed_packages_matrix, stringsAsFactors = FALSE)
 data_book$import_data(data_tables=list(installed_packages_df=installed_packages_df))
-data_book$get_data_frame(data_name="installed_packages_df")
