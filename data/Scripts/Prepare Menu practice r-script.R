@@ -1,3 +1,4 @@
+# Script prodiced on 23 November 2024 using R-Instat Version 0.8.0.
 # Prepare menu practice r-script
 
 # Importing the 2013 stats data of garuoua dataset to preview
