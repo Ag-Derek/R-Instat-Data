@@ -1,5 +1,5 @@
 ## A whole world of data r-script practical
-
+# Script produced on 4 December 2024 using R-Instat Version 0.8.0.
 # Importing the diamonds data into R-Instat from the library
 
 utils::data(package="ggplot2", X=diamonds)

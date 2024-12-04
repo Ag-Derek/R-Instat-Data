@@ -1,3 +1,4 @@
+# Script produced on 4 December 2024 using R-Instat Version 0.8.0.
 ## Fun with Sequences
 ## This script will explore sequences. 
 
