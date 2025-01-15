@@ -1,4 +1,5 @@
 # Script prodiced on 23 November 2024 using R-Instat Version 0.8.0.
+# Script updated on 14 January 2025 using R-Instat Version 0.8.1.
 # Prepare menu practice r-script
 
 # Importing the 2013 stats data of garuoua dataset to preview
@@ -117,22 +118,22 @@ rm(list=c("rainday", "rain"))
 
 # Using the Column Summaries dialog to make the annual rainfall summaries
 
-data_book$calculate_summary(data_name="append_stacked", columns_to_summarise=c("rain","rainday"), factors="year", store_results=TRUE, j=1, summaries=c("summary_count_non_missing", "summary_sum"), silent=TRUE)
+data_book$calculate_summary(data_name="append_stacked", columns_to_summarise=c("rain","rainday"), factors="year", store_results=TRUE, j=1, summaries=c("summary_count", "summary_sum"), silent=TRUE)
 
 
 # Using the Column Summaries dialog to make the annual rainfall summaries without the missing values
 
-data_book$calculate_summary(data_name="append_stacked", columns_to_summarise=c("rain","rainday"), factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count_non_missing", "summary_sum"), silent=TRUE)
+data_book$calculate_summary(data_name="append_stacked", columns_to_summarise=c("rain","rainday"), factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count", "summary_sum"), silent=TRUE)
 
 
 # Using the Column Summaries dialog to find the maximum daily rainfall yearly
 
-data_book$calculate_summary(data_name="append_stacked", columns_to_summarise="rain", factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count_non_missing", "summary_max", "summary_sum"), silent=TRUE)
+data_book$calculate_summary(data_name="append_stacked", columns_to_summarise="rain", factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count", "summary_max", "summary_sum"), silent=TRUE)
 
 
 # Using the Column Summaries dialog to find the maximum daily rainfall monthly
 
-data_book$calculate_summary(data_name="append_stacked", columns_to_summarise="rain", store_results=TRUE, factors=c("year","month"), na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count_non_missing", "summary_max", "summary_sum"), silent=TRUE)
+data_book$calculate_summary(data_name="append_stacked", columns_to_summarise="rain", store_results=TRUE, factors=c("year","month"), na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count", "summary_max", "summary_sum"), silent=TRUE)
 
 
 # Using the Column Summaries dialog to find the sumof the raindays monthly

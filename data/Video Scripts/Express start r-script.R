@@ -1,4 +1,5 @@
-# Script prodiced on 23 November 2024 using R-Instat Version 0.8.0.
+# Script produced on 23 November 2024 using R-Instat Version 0.8.0.
+# Script updated on 14 January 2025 using R-Instat Version 0.8.1.
 ## Express Start
 ## This R-Instat introduction is intended for professional users who have some experience with similar software
 
@@ -82,7 +83,7 @@ data_book$remove_current_filter(data_name="dodoma")
 # Using the Column Summaries to get the annual rainfalls from daily values
 
 data_book$calculate_summary(data_name="dodoma", columns_to_summarise="rain", factors="year", 
-store_results=TRUE, j=1, summaries=c("summary_count_non_missing", "summary_max", "summary_sum"), silent=TRUE)
+store_results=TRUE, j=1, summaries=c("summary_count", "summary_max", "summary_sum"), silent=TRUE)
 
 
 ## The describe menu for a graph

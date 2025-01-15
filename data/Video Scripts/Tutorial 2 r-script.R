@@ -1,4 +1,5 @@
-# Script prodiced on 23 November 2024 using R-Instat Version 0.8.0.
+# Script produced on 23 November 2024 using R-Instat Version 0.8.0.
+# Script updated on 14 January 2025 using R-Instat Version 0.8.1.
 # Tutorial 2 r-script
 
 # Importing the Dodoma Dataset into R-Instat
@@ -42,17 +43,17 @@ rm(list=c("last_summary", "dodoma"))
 
 # Summarizing the data to produce the yearly means and totals without missing values
 
-data_book$calculate_summary(data_name="dodoma", columns_to_summarise=c("tmax","tmin"), factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count_non_missing", "summary_mean"), silent=TRUE)
+data_book$calculate_summary(data_name="dodoma", columns_to_summarise=c("tmax","tmin"), factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count", "summary_mean"), silent=TRUE)
 
 
 # Summarizing the data again to produce the yearly means and totals without omitting the missing values
 
-data_book$calculate_summary(data_name="dodoma", columns_to_summarise=c("tmax","tmin"), factors="year", store_results=TRUE, j=1, summaries=c("summary_count_non_missing", "summary_mean"), silent=TRUE)
+data_book$calculate_summary(data_name="dodoma", columns_to_summarise=c("tmax","tmin"), factors="year", store_results=TRUE, j=1, summaries=c("summary_count", "summary_mean"), silent=TRUE)
 
 
 # Summarizing the data again to produce the yearly means and totals without the missing values
 
-data_book$calculate_summary(data_name="dodoma", columns_to_summarise=c("tmax","tmin"), factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count_non_missing", "summary_mean"), silent=TRUE)
+data_book$calculate_summary(data_name="dodoma", columns_to_summarise=c("tmax","tmin"), factors="year", store_results=TRUE, na.rm=TRUE, na_type=c(), j=1, summaries=c("summary_count", "summary_mean"), silent=TRUE)
 
 
 # Producing a line plot for the mean_tmax
