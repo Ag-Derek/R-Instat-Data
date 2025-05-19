@@ -1,12 +1,21 @@
 ## Express Start Another example
 # Produced on 30 January, 2025 on Version 0.8.1
+# Updated on 19th May, 2025 on Version 0.8.5
 # Importing a Dataset into R-Instat
 
-survey <- rio::import(file="C:/Program Files/R-Instat/0.8.1/static/Library/introductory_guide_datasets.xlsx", guess_max=Inf, which=2)
-data_book$import_data(data_tables=list(survey=survey))
+# Get the current working directory
+current_dir <- getwd()
 
-rm(survey)
+# Construct the file path
+file_path <- file.path(dirname(dirname(current_dir)), "Library", "introductory_guide_datasets.xlsx")
 
+# Import the survey dataset (e.g., sheet 2) using rio
+survey <- rio::import(file = file_path, guess_max = Inf, which = 2)
+
+# Import the dataset into R-Instat
+data_book$import_data(data_tables = list(survey = survey))
+
+# Clean up the workspace
 
 # Using the Transform Text Column dialog to tidy up the village column
 
